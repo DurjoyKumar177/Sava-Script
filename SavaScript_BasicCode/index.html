@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Set Index</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        img {
+            display: none;
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Problem Set Index</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>SN</th>
+                <th>Problem Name</th>
+                <th>Show Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row for Addition of Two Numbers -->
+            <tr>
+                <td>1</td>
+                <td><a href="addition.html">Addition of Two Numbers</a></td>
+                <td><button onclick="showCode('img1')">Show Code</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img id="img1" src="1.jpg" alt="Addition of Two Numbers Solution">
+                </td>
+            </tr>
+
+            <!-- Row for Subtraction of Two Numbers -->
+            <tr>
+                <td>2</td>
+                <td><a href="subtraction.html">Subtraction of Two Numbers</a></td>
+                <td><button onclick="showCode('img2')">Show Code</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img id="img2" src="2.jpg" alt="Subtraction of Two Numbers Solution">
+                </td>
+            </tr>
+
+            <!-- Row for Greater Among Three Numbers -->
+            <tr>
+                <td>3</td>
+                <td><a href="greater-number.html">Greater Among Three Numbers</a></td>
+                <td><button onclick="showCode('img3')">Show Code</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img id="img3" src="3.jpg" alt="Greater Among Three Numbers Solution">
+                </td>
+            </tr>
+
+            <!-- Row for Check Leap Year -->
+            <tr>
+                <td>4</td>
+                <td><a href="leap-year.html">Check Leap Year</a></td>
+                <td><button onclick="showCode('img4')">Show Code</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img id="img4" src="4.jpg" alt="Check Leap Year Solution">
+                </td>
+            </tr>
+
+            <!-- Row for Find Even and Odd Number -->
+            <tr>
+                <td>5</td>
+                <td><a href="even-odd.html">Find Even and Odd Number</a></td>
+                <td><button onclick="showCode('img5')">Show Code</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img id="img5" src="5.jpg" alt="Find Even and Odd Number Solution">
+                </td>
+            </tr>
+
+            <!-- Row for Check Palindrome -->
+            <tr>
+                <td>6</td>
+                <td><a href="palindrome.html">Check Palindrome</a></td>
+                <td><button onclick="showCode('img6')">Show Code</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img id="img6" src="6.jpg" alt="Check Palindrome Solution">
+                </td>
+            </tr>
+
+            <!-- Row for Find Factorial -->
+            <tr>
+                <td>7</td>
+                <td><a href="factorial.html">Find Factorial of a Number</a></td>
+                <td><button onclick="showCode('img7')">Show Code</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img id="img7" src="7.jpg" alt="Find Factorial Solution">
+                </td>
+            </tr>
+
+            <!-- Row for Check Prime Number -->
+            <tr>
+                <td>8</td>
+                <td><a href="prime.html">Check Prime Number</a></td>
+                <td><button onclick="showCode('img8')">Show Code</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img id="img8" src="8.jpg" alt="Check Prime Number Solution">
+                </td>
+            </tr>
+
+            <!-- Row for Reverse a Number -->
+            <tr>
+                <td>9</td>
+                <td><a href="reverse.html">Reverse a Number</a></td>
+                <td><button onclick="showCode('img9')">Show Code</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img id="img9" src="9.jpg" alt="Reverse a Number Solution">
+                </td>
+            </tr>
+
+            <!-- Row for Temperature Conversion -->
+            <tr>
+                <td>10</td>
+                <td><a href="temp-convert.html">Temperature Conversion (C to F)</a></td>
+                <td><button onclick="showCode('img10')">Show Code</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img id="img10" src="10.jpg" alt="Temperature Conversion Solution">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function showCode(imgId) {
+            // Toggle the display of the image
+            let imgBlock = document.getElementById(imgId);
+            imgBlock.style.display = imgBlock.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

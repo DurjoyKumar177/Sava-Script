@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subtraction of Two Numbers</title>
+</head>
+<body>
+    <h3>Subtraction of Two Numbers</h3>
+    <input type="number" id="sub1" placeholder="Enter first number"> -
+    <input type="number" id="sub2" placeholder="Enter second number">
+    <button onclick="subtractNumbers()">Subtract</button>
+    <p id="subResult"></p>
+
+    <script>
+        function subtractNumbers() {
+            let num1 = parseFloat(document.getElementById('sub1').value);
+            let num2 = parseFloat(document.getElementById('sub2').value);
+            let result = num1 - num2;
+            document.getElementById('subResult').innerHTML = "Difference: " + result;
+        }
+    </script>
+</body>
+</html>
